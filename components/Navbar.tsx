@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from 'react'
 import Image from 'next/image'
+import Links from './Links';
 
 const Navbar = () => {
 
@@ -37,9 +38,10 @@ const Navbar = () => {
                 />
             </div>
 
-            <aside className={`navLinks-container absolute h-full bg-black z-10 top-0 right-0
+            <aside className={`navLinks-container absolute h-full bg-black text-white z-10 top-0 right-0
             ${menuOpen ? '' : 'hidden'}`}>
-            
+                <Links /> 
+                {/* aayusin ko pa yung pag render ng aside bar which is yung Links Component */}
             </aside>
         </nav>
     )
