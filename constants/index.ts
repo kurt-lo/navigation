@@ -16,14 +16,14 @@ export const navLinks: { title: string; labels: LinkTypes[] }[] = [
             { label: 'History' },
             { label: 'Our Team' },
             { label: 'Blog' },
-        ]
+        ],
     },
     {
         title: 'Careers',
-        labels: [] // Ensure 'labels' property is present, even if it's an empty array
+        labels: [], // Ensure 'labels' property is present, even if it's an empty array
     },
     {
         title: 'About',
-        labels: [] // Ensure 'labels' property is present, even if it's an empty array
+        labels: [],
     }
 ]
