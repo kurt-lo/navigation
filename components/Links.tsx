@@ -12,18 +12,18 @@ const Links = ({ title, links }: { title: string; links: LinkTypes[] }) => {
   };
 
   return (
-    <div className='text-medium-gray font-medium pb-[1rem]'>
+    <div className='pb-[1rem] pr-[3rem] pl-[1.5rem] sm:pb-[0] sm:pr-[0] sm:pl-[4rem]'>
       <div className='flex'>
-        <button className='pr-[1rem] cursor-pointer' onClick={toggleCategory}>
+        <button className='pr-[1rem] sm:pr-[.5rem] cursor-pointer' onClick={toggleCategory}>
           {title}
         </button>
-        {(title === 'Features' || title === 'Company') && ( // Only show arrow for 'Features' and 'Company'
+        {(title === 'Features' || title === 'Company') && ( // Only show arrow for Features and Company
           <button onClick={toggleCategory}>
             <Image src={openCategory ? './icon-arrow-up.svg' : './icon-arrow-down.svg'} alt={`${title} arrow`} width={15} height={15} />
           </button>
         )}
       </div>
-      <ul className={`${openCategory ? '' : 'hidden'} ml-[1.5rem]`}>
+      <ul className={`${openCategory ? '' : 'hidden'} ml-[1.5rem] sm:ml-[0]`}>
         {links.map((label, labelIndex) => (
           <li key={labelIndex} className='flex items-center gap-[.7rem] pt-[.5rem]'>
             {label.icon && (

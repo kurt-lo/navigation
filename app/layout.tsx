@@ -1,6 +1,9 @@
 import Navbar from '@/components/Navbar'
 import './globals.css'
 import type { Metadata } from 'next'
+import { Epilogue } from 'next/font/google'
+
+const fontFamily = Epilogue({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Navigation',
@@ -14,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className={fontFamily.className}>
         <Navbar />
         {children}
       </body>

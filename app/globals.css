@@ -1,5 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+ 
+/* main {
+    filter: blur(1px);
+} */
 
-
+/* @media (max-width: 640px) {
+    .navLinks-container{
+        position: absolute;
+    }
+} */
