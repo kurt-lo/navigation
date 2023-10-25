@@ -11,10 +11,12 @@ const Links = ({ title, links }: { title: string; links: LinkTypes[] }) => {
     setOpenCategory(!openCategory);
   };
 
+  const shouldHavePadding = title === 'Features' || title === 'Company';
+  
   return (
     <div className='pb-[1rem] pr-[3rem] pl-[1.5rem] sm:pb-[0] sm:pr-[0] sm:pl-[4rem]'>
-      <div className='flex'>
-        <button className='pr-[1rem] sm:pr-[.5rem] cursor-pointer' onClick={toggleCategory}>
+      <div className='flex hover:text-almost-black hover:font-bold'>
+        <button className='pr-[1rem] sm:pr-[.5rem] cursor-pointer ' onClick={toggleCategory}>
           {title}
         </button>
         {(title === 'Features' || title === 'Company') && ( // Only show arrow for Features and Company
@@ -23,7 +25,7 @@ const Links = ({ title, links }: { title: string; links: LinkTypes[] }) => {
           </button>
         )}
       </div>
-      <ul className={`${openCategory ? '' : 'hidden'} ml-[1.5rem] sm:ml-[0]`}>
+      <ul className={`${openCategory ? '' : 'hidden'} ml-[1.5rem] sm:ml-[0] sm:top-[3rem] sm:absolute sm:rounded-[15px] ${title === 'Features' || title === 'Company' ? 'sm:p-[1rem]' : ''}`}>
         {links.map((label, labelIndex) => (
           <li key={labelIndex} className='flex items-center gap-[.7rem] pt-[.5rem]'>
             {label.icon && (

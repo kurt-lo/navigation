@@ -35,17 +35,17 @@ const Navbar = () => {
 
       <aside
         className={`navLinks-container absolute h-full w-[15rem] bg-slate-300 text-medium-gray font-medium z-[1000] top-0 right-0 pt-[6rem] 
-         sm:flex sm:items-center sm:relative sm:bg-white sm:w-[100%] sm:h-auto sm:pt-[0] 
+         sm:flex sm:items-center sm:relative sm:bg-white sm:w-[100%] sm:h-auto sm:pt-[0]
           ${menuOpen ? '' : 'hidden'}`}
       >
         {navLinks.map((category, index) => (
           <Links key={index} title={category.title} links={category.labels} />
         ))}
         <div className='flex flex-col items-center sm:flex-row sm:ml-auto'>
-          <div className='py-[.3rem] px-[4rem] sm:px-[2rem]'>
+          <div className='py-[.3rem] px-[4rem] sm:px-[2rem] hover:text-almost-black hover:font-bold'>
             <button>Login</button>
           </div>
-          <div className='border-solid border-medium-gray border-2 rounded-[10px] '>
+          <div className='border-solid border-medium-gray border-2 rounded-[10px] hover:text-almost-black hover:font-bold hover:border-black'>
             <button className='py-[.3rem] px-[4rem] sm:px-[2rem]'>Register</button>
           </div>
         </div>

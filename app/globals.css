@@ -11,3 +11,11 @@
         position: absolute;
     }
 } */
+
+@media (min-width: 641px) {
+    ul {
+        box-shadow: 0px 0px 19px -5px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 0px 0px 19px -5px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 19px -5px rgba(0,0,0,0.75);
+    }
+}
