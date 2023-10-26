@@ -4,18 +4,18 @@ export const navLinks: { title: string; labels: LinkTypes[] }[] = [
     {
         title: 'Features',
         labels: [
-            { icon: './icon-todo.svg', label: 'Todo List' },
-            { icon: './icon-calendar.svg', label: 'Calendar' },
-            { icon: './icon-reminders.svg', label: 'Reminders' },
-            { icon: './icon-planning.svg', label: 'Planning' },
+            { icon: './icon-todo.svg', label: 'Todo List', href:'/' },
+            { icon: './icon-calendar.svg', label: 'Calendar', href:'/' },
+            { icon: './icon-reminders.svg', label: 'Reminders', href:'/' },
+            { icon: './icon-planning.svg', label: 'Planning', href:'/' },
         ],
     },
     {
         title: 'Company',
         labels: [
-            { label: 'History' },
-            { label: 'Our Team' },
-            { label: 'Blog' },
+            { label: 'History', href:'/' },
+            { label: 'Our Team', href:'/' },
+            { label: 'Blog', href:'/' },
         ],
     },
     {
