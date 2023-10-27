@@ -4,16 +4,16 @@ import { useEffect, useState } from "react";
 
 export default function Home() {
 
-  const [imageHero, setImageHero] = useState('/image-hero-mobile.png');
+  const [imageHero, setImageHero] = useState('./image-hero-mobile.png');
   const [largeScreen, setLargeScreen] = useState(false);
 
   useEffect(() => {
     const handleWebSize = () => {
       if (window.innerWidth >= 641) {
-        setImageHero('/image-hero-desktop.png')
+        setImageHero('./image-hero-desktop.png')
         setLargeScreen(true);
       } else {
-        setImageHero('/image-hero-mobile.png')
+        setImageHero('./image-hero-mobile.png')
         setLargeScreen(false);
       }
     }
@@ -54,7 +54,7 @@ export default function Home() {
           <ul className="flex items-center justify-center gap-[1rem] pt-[2.3rem] sm:mt-auto sm:justify-start lg:gap-[3rem]">
             <li>
               <Image
-                src='/client-databiz.svg'
+                src='./client-databiz.svg'
                 alt="databiz"
                 width={80}
                 height={25}
@@ -62,7 +62,7 @@ export default function Home() {
             </li>
             <li>
               <Image
-                src='/client-audiophile.svg'
+                src='./client-audiophile.svg'
                 alt="audophile"
                 width={55}
                 height={25}
@@ -70,7 +70,7 @@ export default function Home() {
             </li>
             <li>
               <Image
-                src='/client-meet.svg'
+                src='./client-meet.svg'
                 alt="meet"
                 width={80}
                 height={25}
@@ -78,7 +78,7 @@ export default function Home() {
             </li>
             <li>
               <Image
-                src='/client-maker.svg'
+                src='./client-maker.svg'
                 alt="maker"
                 width={80}
                 height={25}
