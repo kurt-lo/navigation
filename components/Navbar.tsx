@@ -34,7 +34,7 @@ const Navbar = () => {
       </div>
 
       <aside
-        className={`navLinks-container absolute h-full w-[15rem] bg-slate-300 text-medium-gray font-medium z-[1000] top-0 right-0 pt-[6rem] 
+        className={`navLinks-container absolute h-full w-[15rem] bg-almost-white text-medium-gray font-medium z-[1000] top-0 right-0 pt-[6rem] 
          sm:flex sm:items-center sm:relative sm:bg-white sm:w-[100%] sm:h-auto sm:pt-[0]
           ${menuOpen ? '' : 'hidden'}`}
       >
